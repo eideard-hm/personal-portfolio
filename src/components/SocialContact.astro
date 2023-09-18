@@ -1,7 +1,8 @@
 ---
-const logoTwitter = (await import("~icons/simple-icons/instagram?raw")).default;
-const logoLinkedin = (await import("~icons/simple-icons/linkedin?raw")).default;
-const logoGitHub = (await import("~icons/simple-icons/github?raw")).default;
+const logoInstagram = (await import('~icons/simple-icons/instagram?raw'))
+  .default;
+const logoLinkedin = (await import('~icons/logos/linkedin-icon?raw')).default;
+const logoGitHub = (await import('~icons/simple-icons/github?raw')).default;
 ---
 
 <div class="social">
@@ -19,7 +20,7 @@ const logoGitHub = (await import("~icons/simple-icons/github?raw")).default;
     </li>
     <li>
       <a href="https://www.instagram.com/eideard.hm/" target="_blank"
-        ><Fragment set:html={logoTwitter} />Instagram</a
+        ><Fragment set:html={logoInstagram} />Instagram</a
       >
     </li>
   </ul>
@@ -63,7 +64,7 @@ const logoGitHub = (await import("~icons/simple-icons/github?raw")).default;
       transform-origin: left;
 
       position: absolute;
-      content: "";
+      content: '';
       left: 0;
       top: 0;
       width: 0.2rem;
