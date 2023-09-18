@@ -1,13 +1,13 @@
 ---
-import ThemeIcon from "./ThemeIcon.astro";
-import OpenNav from "~icons/dashicons/menu-alt";
+import ThemeIcon from './ThemeIcon.astro';
+import OpenNav from '~icons/dashicons/menu-alt';
 
 const links = new Map([
-  ["Acerca de mi", "/#about-me"],
-  ["Habilidades", "/#skills"],
-  ["Projectos", "/#projects"],
-  ["Open Source", "/#opensource"],
-  ["Contacto", "/#contact"],
+  ['Acerca de mi', '/#about-me'],
+  ['Habilidades', '/#skills'],
+  ['Proyectos', '/#projects'],
+  ['Open Source', '/#opensource'],
+  ['Contacto', '/#contact'],
 ]);
 ---
 
@@ -41,22 +41,22 @@ const links = new Map([
 </nav>
 
 <script>
-  const navbar = document.querySelector(".navbar") as HTMLElement;
+  const navbar = document.querySelector('.navbar') as HTMLElement;
 
   function handleScroll() {
     const scrollPosition = window.scrollY;
     if (scrollPosition > 0) {
       requestAnimationFrame(() => {
-        navbar.classList.add("sticky");
+        navbar.classList.add('sticky');
       });
     } else if (scrollPosition <= 0) {
       requestAnimationFrame(() => {
-        navbar.classList.remove("sticky");
+        navbar.classList.remove('sticky');
       });
     }
   }
 
-  window.addEventListener("scroll", handleScroll);
+  window.addEventListener('scroll', handleScroll);
 </script>
 
 <style lang="scss">
@@ -160,10 +160,10 @@ const links = new Map([
 </style>
 
 <script>
-  const toggleButton = document.getElementById("navbar-button");
-  const navigationLinks = document.querySelector(".navbar__right");
+  const toggleButton = document.getElementById('navbar-button');
+  const navigationLinks = document.querySelector('.navbar__right');
 
-  toggleButton?.addEventListener("click", () => {
-    navigationLinks?.toggleAttribute("data-active");
+  toggleButton?.addEventListener('click', () => {
+    navigationLinks?.toggleAttribute('data-active');
   });
 </script>
