@@ -1,0 +1,169 @@
+---
+import ThemeIcon from "./ThemeIcon.astro";
+import OpenNav from "~icons/dashicons/menu-alt";
+
+const links = new Map([
+  ["Acerca de mi", "/#sobre-mim"],
+  ["Habilidades", "/#habilidades"],
+  ["Projectos", "/#projetos"],
+  ["Open Source", "/#opensource"],
+  ["Contacto", "/#contato"],
+]);
+---
+
+<nav class="navbar">
+  <div class="navbar__container">
+    <header class="navbar__title">
+      <div><a href="#">Edier Hernandez</a></div>
+      <button
+        class="navbar__button"
+        aria-label="Toggle navigation menu"
+        id="navbar-button"
+      >
+        <OpenNav />
+      </button>
+    </header>
+    <div class="navbar__right">
+      <ul role="list" class="navbar__navigation">
+        {
+          Array.from(links, ([key, value]) => (
+            <li>
+              <a href={value} class="navbar__link">
+                {key}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+      <ThemeIcon />
+    </div>
+  </div>
+</nav>
+
+<script>
+  const navbar = document.querySelector(".navbar") as HTMLElement;
+
+  function handleScroll() {
+    const scrollPosition = window.scrollY;
+    if (scrollPosition > 0) {
+      requestAnimationFrame(() => {
+        navbar.classList.add("sticky");
+      });
+    } else if (scrollPosition <= 0) {
+      requestAnimationFrame(() => {
+        navbar.classList.remove("sticky");
+      });
+    }
+  }
+
+  window.addEventListener("scroll", handleScroll);
+</script>
+
+<style lang="scss">
+  .navbar {
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    transition: background-color 300ms;
+    overflow: hidden;
+
+    & a {
+      color: var(--fg);
+      text-decoration: none;
+    }
+  }
+
+  .navbar.sticky {
+    @include shadow;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    background-color: var(--bg-transparent);
+  }
+
+  .navbar__container {
+    @include centered-content;
+    padding: 1.2rem 0.6rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navbar__title {
+    font-size: var(--step-1);
+    font-weight: 600;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbar__right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .navbar__navigation {
+    display: flex;
+    gap: 0rem 2rem;
+    align-items: center;
+  }
+
+  .navbar__link {
+    background: linear-gradient(var(--danger) 0 0) calc(100% - var(--p, 0%)) 90% /
+      var(--p, 0%) 2px no-repeat;
+    transition:
+      150ms,
+      background-position 0s;
+
+    &:hover,
+    &:focus-visible {
+      --p: 100%;
+    }
+  }
+
+  .navbar__button {
+    display: none;
+    background: none;
+    color: var(--fg);
+    cursor: pointer;
+    border: none;
+  }
+
+  @media (max-width: 960px) {
+    .navbar__button {
+      display: unset;
+    }
+
+    .navbar__right {
+      display: none;
+    }
+
+    .navbar__container {
+      flex-direction: column;
+    }
+
+    .navbar__right[data-active] {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .navbar__navigation {
+      flex-direction: column;
+      align-items: flex-start;
+      li {
+        padding-top: 1rem;
+      }
+    }
+  }
+</style>
+
+<script>
+  const toggleButton = document.getElementById("navbar-button");
+  const navigationLinks = document.querySelector(".navbar__right");
+
+  toggleButton?.addEventListener("click", () => {
+    navigationLinks?.toggleAttribute("data-active");
+  });
+</script>

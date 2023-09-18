@@ -1,0 +1,28 @@
+---
+import ProjectList from "@components/ProjectList.astro";
+---
+
+<div class="projects" id="projetos">
+  <h2>Projetos</h2>
+  <ProjectList />
+</div>
+
+<style lang="scss">
+  .projects {
+    @include card;
+    position: relative;
+  }
+
+  h2 {
+    font-size: var(--step-3);
+    margin-bottom: var(--space-m);
+  }
+
+  .project__button {
+    display: block;
+    width: fit-content;
+    font-size: var(--step-1);
+    margin-top: var(--space-xl);
+    @include border-button;
+  }
+</style>

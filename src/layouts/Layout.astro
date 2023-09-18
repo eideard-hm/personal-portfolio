@@ -1,0 +1,56 @@
+---
+import NavBar from "@components/NavBar.astro";
+import TheHead from "@components/TheHead.astro";
+import NoiseFilter from "@components/NoiseFilter.astro";
+import TheFooter from "@components/TheFooter.astro";
+import "@/styles/index.scss";
+
+interface Props {
+  pageName: string;
+}
+
+const { pageName } = Astro.props;
+
+const title = pageName
+  ? `Edier Hernandez | ${pageName}`
+  : "Edier Hernandez | Portafolio";
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <TheHead title={title} />
+    <script is:inline>
+      const theme = (() => {
+        if (
+          typeof localStorage !== "undefined" &&
+          localStorage.getItem("theme")
+        ) {
+          return localStorage.getItem("theme");
+        }
+        if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+          return "dark";
+        }
+        return "light";
+      })();
+
+      if (theme === "light") {
+        document.documentElement.classList.remove("dark");
+      } else {
+        document.documentElement.classList.add("dark");
+      }
+
+      window.localStorage.setItem("theme", theme);
+    </script>
+  </head>
+  <body>
+    <NoiseFilter />
+    <NavBar />
+    <main>
+      <slot />
+    </main>
+    <footer>
+      <TheFooter />
+    </footer>
+  </body>
+</html>

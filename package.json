@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "@iconify/json": "2.2.116",
+    "astro": "3.1.0",
+    "motion": "10.16.2",
+    "sass": "1.67.0",
+    "unplugin-icons": "0.17.0"
+  },
+  "devDependencies": {
+    "prettier": "3.0.3",
+    "prettier-plugin-astro": "0.12.0"
+  },
+  "name": "portfolio",
+  "private": true,
+  "scripts": {
+    "astro": "astro",
+    "build": "astro build",
+    "dev": "astro dev",
+    "preview": "astro preview",
+    "start": "astro dev"
+  },
+  "type": "module",
+  "version": "0.0.1"
+}

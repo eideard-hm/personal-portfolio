@@ -1,0 +1,46 @@
+@mixin centered-content {
+  width: 90vw;
+  width: clamp(16rem, 90vw, 90rem);
+  margin-inline: auto;
+}
+
+@mixin border-button {
+  background-color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 200ms;
+  border: solid 1px var(--danger);
+  padding: 0.2rem 1rem;
+  border-radius: 0.5rem;
+  color: var(--fg);
+  line-height: 1.4;
+  &:hover,
+  &:focus-visible {
+    color: var(--neutral-900);
+    background-color: var(--danger);
+  }
+
+  &:active:not(:disabled) {
+    transform: translate(2px, 2px);
+  }
+}
+
+@mixin shadow {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@mixin strong-shadow {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+@mixin card {
+  z-index: 10;
+  background-color: var(--bg-secondary);
+  @include shadow;
+  border-radius: 0.5rem;
+  padding: var(--space-m) var(--space-l-xl);
+}
+
+@mixin card-max-width {
+  max-width: calc(clamp(16rem, 90vw, 90rem) - (2 * var(--space-l-xl)));
+}

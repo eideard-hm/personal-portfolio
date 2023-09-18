@@ -1,0 +1,88 @@
+---
+import TechIcon from "@components/TechIcon.astro";
+
+const icons: Tech[] = [
+  "Git",
+  "GitHub",
+  "HTML5",
+  "CSS3",
+  "SASS",
+  "Javascript",
+  "Typescript",
+  "Vue",
+  "Nuxt",
+  "Astro",
+];
+---
+
+<ul class="icon-list content" role="list">
+  {
+    icons.map((icon) => {
+      return (
+        <li data-tooltip={icon}>
+          <TechIcon name={icon} />
+        </li>
+      );
+    })
+  }
+</ul>
+
+<style lang="scss">
+  .icon-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--space-l-xl);
+    font-size: var(--step-4);
+    color: var(--gray);
+  }
+
+  li {
+    &::after {
+      content: attr(data-tooltip);
+      display: block;
+      position: absolute;
+      bottom: 100%;
+      left: 50%;
+      font-size: 1.3rem;
+      padding: 0.15rem 0.4rem;
+      background-color: var(--bg-secondary);
+      color: var(--fg);
+      transform: translate(-50%, 0rem);
+      border-radius: 6px;
+      opacity: 0;
+      pointer-events: none;
+      transition:
+        opacity 0.4s,
+        transform 0.4s;
+    }
+
+    &:hover,
+    &:focus-visible {
+      color: var(--danger);
+
+      &::after {
+        opacity: 1;
+        transform: translate(-50%, -0.3rem);
+      }
+    }
+  }
+</style>
+
+<script>
+  import { animate, inView, stagger, spring } from "motion";
+
+  inView(".icon-list li", () => {
+    animate(
+      ".icon-list li",
+      {
+        opacity: [0, 1],
+        y: [80, 0],
+      },
+      {
+        delay: stagger(0.05),
+        easing: spring({ stiffness: 200, damping: 30 }),
+      },
+    );
+  });
+</script>

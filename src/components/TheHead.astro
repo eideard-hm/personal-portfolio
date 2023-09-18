@@ -1,0 +1,57 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!-- Primary Meta Tags -->
+<title>{title}</title>
+<meta name="title" content={title} />
+<meta name="generator" content={Astro.generator} />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+
+<meta
+  name="description"
+  content="Desenvolvedor Web com conhecimento de VueJS, Typescript, CSS, HTML5 e Astro, em busca de uma oportunidade como desenvolvedor júnior"
+/>
+<!-- Fav Icon -->
+<link rel="icon" type="image/svg+xml" href="/favicon.svg?v=2" />
+<link rel="icon" type="image/png" href="/favicon.png?v=2" />
+
+<!-- Google Site Verfication -->
+<meta
+  name="google-site-verification"
+  content="PN4uQKnDthT5jT-_4ohZfbRTJ8C_rEHiKA63LHCH1_4"
+/>
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://ralacerda-portfolio.netlify.app/" />
+<meta property="og:title" content={title} />
+<meta
+  property="og:description"
+  content="Desenvolvedor Web com conhecimento de VueJS, Typescript, CSS, HTML5 e Astro, em busca de uma oportunidade como desenvolvedor júnior"
+/>
+<meta
+  property="og:image"
+  content="https://ralacerda-portfolio.netlify.app/meta.png"
+/>
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta
+  property="twitter:url"
+  content="https://ralacerda-portfolio.netlify.app/"
+/>
+<meta property="twitter:title" content={title} />
+<meta
+  property="twitter:description"
+  content="Desenvolvedor Web com conhecimento de VueJS, Typescript, CSS, HTML5 e Astro, em busca de uma oportunidade como desenvolvedor júnior"
+/>
+<meta
+  property="twitter:image"
+  content="https://ralacerda-portfolio.netlify.app/meta.png"
+/>
