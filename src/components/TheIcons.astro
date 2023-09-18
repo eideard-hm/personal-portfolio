@@ -1,18 +1,19 @@
 ---
-import TechIcon from "@components/TechIcon.astro";
+import TechIcon from '@components/TechIcon.astro';
 
 const icons: Tech[] = [
-  "React",
-  "Angular",
-  ".NET",
-  "Go",
-  "Node.js",
-  "Git",
-  "Typescript",
-  "C#",
-  "Astro",
-  "MongoDB",
-  "Sql Server",
+  'React',
+  'Angular',
+  '.NET',
+  'Go',
+  'Node.js',
+  'Git',
+  'Typescript',
+  'C#',
+  'Astro',
+  'Qwik',
+  'MongoDB',
+  'Sql Server',
 ];
 ---
 
@@ -71,11 +72,11 @@ const icons: Tech[] = [
 </style>
 
 <script>
-  import { animate, inView, stagger, spring } from "motion";
+  import { animate, inView, stagger, spring } from 'motion';
 
-  inView(".icon-list li", () => {
+  inView('.icon-list li', () => {
     animate(
-      ".icon-list li",
+      '.icon-list li',
       {
         opacity: [0, 1],
         y: [80, 0],
