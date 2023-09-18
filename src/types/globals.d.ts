@@ -29,6 +29,6 @@ const TechNames = [
   "Next.js",
   "Node.js",
   "React",
-  "SqlServer",
+  "Sql Server",
   "Typescript",
 ] as const;
