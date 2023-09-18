@@ -1,1 +1,1 @@
-Estou disponível para contato através do formulário abaixo ou pelas redes sociais.
+Estoy disponible para contactarme usando el siguiente formulario o a través de las redes sociales.
