@@ -1,7 +1,5 @@
-Desde cedo, tive paixão e curiosidade por tecnologia, graças ao contato com computadores por meio de meu pai. Aprendi a utilizar Linux, formatar e particionar computadores, bem como solucionar problemas cotidianos com programação básica.
+Desarrollador de software web y tecnólogo en Análisis y Desarrollo de Sistemas de Sistemas Información, con experiencia en proporcionar soluciones empresariales utilizando tecnologías como Go, JavaScript, React, Angular, Node.js, TypeScript, .NET y SQL Server. Con gran capacidad de aprendizaje y adaptación sobre nuevas tecnologías de forma autónoma y autodidacta.
 
-Anos depois, mesmo não trabalhando na área de tecnologia, meu conhecimento anterior foi valioso em tarefas cotidianas e no ambiente acadêmico.
+Lo que más me entusiasma de ser un desarrollador web es la capacidad de impactar en la vida de las personas al crear soluciones que simplifiquen tareas y mejoren la accesibilidad a la información. Estoy constantemente aprendiendo y manteniéndome al día con las últimas tendencias tecnológicas para ofrecer productos de alta calidad.
 
-Durante a pandemia, tive a oportunidade de colaborar com a divulgação de um evento acadêmico, criando seu site. Embora tivesse enfrentado desafios iniciais, dediquei-me a aprender e consegui concluir o projeto, reacendendo minha paixão pela programação, especialmente pelo desenvolvimento web.
-
-Desde então, tenho me esforçado para aprimorar meus conhecimentos na área e me preparar para uma mudança de carreira. Atualmente, participo do Programa de Desenvolvimento do Grupo Boticário (Trilha FullStack) e busco oportunidades para começar minha carreira como desenvolvedor.
+Cuando no estoy codificando, disfruto explorando nuevas bibliotecas y frameworks, así como colaborando con otros profesionales del desarrollo.

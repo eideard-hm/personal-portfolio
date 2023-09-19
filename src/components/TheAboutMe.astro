@@ -1,51 +1,44 @@
 ---
-import { Content as AboutMeText } from "@/data/about-me.md";
+import { Content as AboutMeText } from '@/data/about-me.md';
 
-const logoUnicamp = await import("@/assets/logos/unicamp.svg?raw");
-const logoUsp = await import("@/assets/logos/usp.svg?raw");
-const logoSouthampton = await import("@/assets/logos/southampton.svg?raw");
-const logoDesenvolva = await import("@/assets/logos/desenvolva.svg?raw");
+const logoUnicamp = await import('@/assets/logos/unicamp.svg?raw');
+const logoUdemy = await import('~icons/logos/udemy-icon?raw');
+const logoDesenvolva = await import('@/assets/logos/desenvolva.svg?raw');
 ---
 
 <div class="about__grid" id="about-me">
   <div class="about__card">
-    <h2>Sobre mim</h2>
+    <h2>Acerca de mi</h2>
     <div class="about__text">
       <AboutMeText />
     </div>
   </div>
   <div class="about">
     <div class="about__bubble">
-      <h3 class="bubble__title">Programa Desenvolve Fullstack</h3>
-      <div class="bubble__location">Grupo Boticário - Alura</div>
+      <h3 class="bubble__title">Autodidacta</h3>
+      <div class="bubble__location">Udemy</div>
+      <div class="bubble__logo">
+        <Fragment set:html={logoUdemy.default} />
+      </div>
+      <div class="bubble__date">2020-Actualmente</div>
+    </div>
+    <div class="about__bubble">
+      <h3 class="bubble__title">
+        Tecnólogo en Análisis y Desarrollo de Sistemas de Información
+      </h3>
+      <div class="bubble__location">Servicio Nacional de Aprendizaje</div>
       <div class="bubble__logo">
         <Fragment set:html={logoDesenvolva.default} />
       </div>
-      <div class="bubble__date">2023</div>
+      <div class="bubble__date">2021-2021</div>
     </div>
     <div class="about__bubble">
-      <h3 class="bubble__title">Mestrado em Ecologia</h3>
-      <div class="bubble__location">Universidade de Campinas</div>
+      <h3 class="bubble__title">Técnico en Programación de Software</h3>
+      <div class="bubble__location">Servicio Nacional de Aprendizaje</div>
       <div class="bubble__logo">
         <Fragment set:html={logoUnicamp.default} />
       </div>
-      <div class="bubble__date">2019 - 2023</div>
-    </div>
-    <div class="about__bubble">
-      <h3 class="bubble__title">Ciências Sem Fronteiras</h3>
-      <div class="bubble__location">University of Southampton</div>
-      <div class="bubble__logo">
-        <Fragment set:html={logoSouthampton.default} />
-      </div>
-      <div class="bubble__date">2013 - 2014</div>
-    </div>
-    <div class="about__bubble">
-      <h3 class="bubble__title">Graduação em Ciências Biológicas</h3>
-      <div class="bubble__location">Universidade de São Paulo</div>
-      <div class="bubble__logo">
-        <Fragment set:html={logoUsp.default} />
-      </div>
-      <div class="bubble__date">2010 - 2015</div>
+      <div class="bubble__date">2019 - 2020</div>
     </div>
   </div>
 </div>
@@ -88,7 +81,7 @@ const logoDesenvolva = await import("@/assets/logos/desenvolva.svg?raw");
       height: calc(100% + (var(--distance)));
       top: var(--step-0);
       left: calc(var(--left-margin) - (var(--line-width) / 2));
-      content: "";
+      content: '';
       z-index: -10;
     }
   }
@@ -126,7 +119,7 @@ const logoDesenvolva = await import("@/assets/logos/desenvolva.svg?raw");
   }
 
   .about__bubble::before {
-    content: "";
+    content: '';
     width: var(--circle-size);
     height: var(--circle-size);
     left: calc((var(--left-margin) * -1) - (var(--circle-size) / 2));
@@ -138,7 +131,7 @@ const logoDesenvolva = await import("@/assets/logos/desenvolva.svg?raw");
   }
 
   .about__bubble::after {
-    content: "";
+    content: '';
     z-index: -5;
     height: var(--line-width);
     width: calc(var(--left-margin) * 1.3);
