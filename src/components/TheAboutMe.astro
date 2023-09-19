@@ -1,9 +1,8 @@
 ---
 import { Content as AboutMeText } from '@/data/about-me.md';
 
-const logoUnicamp = await import('@/assets/logos/unicamp.svg?raw');
+const logoSena = await import('@/assets/logos/sena.svg?raw');
 const logoUdemy = await import('~icons/logos/udemy-icon?raw');
-const logoDesenvolva = await import('@/assets/logos/desenvolva.svg?raw');
 ---
 
 <div class="about__grid" id="about-me">
@@ -28,7 +27,7 @@ const logoDesenvolva = await import('@/assets/logos/desenvolva.svg?raw');
       </h3>
       <div class="bubble__location">Servicio Nacional de Aprendizaje</div>
       <div class="bubble__logo">
-        <Fragment set:html={logoDesenvolva.default} />
+        <Fragment set:html={logoSena.default} />
       </div>
       <div class="bubble__date">2021-2021</div>
     </div>
@@ -36,7 +35,7 @@ const logoDesenvolva = await import('@/assets/logos/desenvolva.svg?raw');
       <h3 class="bubble__title">Técnico en Programación de Software</h3>
       <div class="bubble__location">Servicio Nacional de Aprendizaje</div>
       <div class="bubble__logo">
-        <Fragment set:html={logoUnicamp.default} />
+        <Fragment set:html={logoSena.default} />
       </div>
       <div class="bubble__date">2019 - 2020</div>
     </div>
