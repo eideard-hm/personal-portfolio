@@ -1,5 +1,4 @@
 ---
-import { Image } from 'astro:assets';
 const pullrequests = await Astro.glob('../assets/pullrequests/*.png');
 
 const pullrequestsInfo = [
@@ -55,7 +54,7 @@ const pullrequestsInfo = [
       pullrequests.map((print, index) => (
         <div class="gallery__image">
           <a href={pullrequestsInfo[index].url} target="_blank">
-            <Image
+            <img
               src={print.default.src}
               alt={pullrequestsInfo[index].alt}
               loading="lazy"
