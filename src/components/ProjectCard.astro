@@ -1,7 +1,7 @@
 ---
-import { Image } from "astro:assets";
+import { Image } from 'astro:assets';
 
-import TechIcon from "@/components/TechIcon.astro";
+import TechIcon from '@/components/TechIcon.astro';
 
 interface Props {
   project: Project;
@@ -11,7 +11,7 @@ interface Props {
 const { project, index } = Astro.props;
 ---
 
-<div class="project" data-show={index > 2 ? "false" : "true"}>
+<div class="project" data-show={index > 2 ? 'false' : 'true'}>
   <div class="project__flex">
     <div class="project__text">
       <h3 class="project__title">{project.title}</h3>
@@ -19,7 +19,7 @@ const { project, index } = Astro.props;
         >{project.link}</a
       >
       <div class="project__description" set:html={project.shortContent} />
-      <a href={project.repoLink} target="_blank"> Repositório do projeto</a>
+      <a href={project.repoLink} target="_blank">Repositorio del Proyecto</a>
       <ul class="project__icons" role="list">
         {
           project.tech.map((icon) => {

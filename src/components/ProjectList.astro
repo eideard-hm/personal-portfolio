@@ -1,22 +1,22 @@
 ---
-import ProjectCard from "@/components/ProjectCard.astro";
-import { parseProject } from "@/composables/parseProject";
+import ProjectCard from '@/components/ProjectCard.astro';
+import { parseProject } from '@/composables/parseProject';
 
-const projectFiles = await Astro.glob("../data/projects/*.md");
+const projectFiles = await Astro.glob('../data/projects/*.md');
 const projectList = await Promise.all(
-  projectFiles.map(async (project) => await parseProject(project))
+  projectFiles.map(async (project) => await parseProject(project)),
 );
 ---
 
 {
   projectList
-    .sort((a, b) => b.weight - a.weight)
+    .sort((a, b) => a.weight - b.weight)
     .map((project, index) => {
       return <ProjectCard project={project} index={index} />;
     })
 }
 
-<button id="showMore" data-show="true"> Mostrar mais projetos</button>
+<button id="showMore" data-show="true">Mostrar más Proyectos</button>
 
 <style lang="scss">
   #showMore {
@@ -26,25 +26,25 @@ const projectList = await Promise.all(
 </style>
 
 <style is:global>
-  [data-show="false"] {
+  [data-show='false'] {
     display: none;
   }
 
-  [data-show="true"] {
+  [data-show='true'] {
     display: block;
   }
 </style>
 
 <script>
-  const showMoreButton = document.querySelector("#showMore") as HTMLElement;
-  const extraProjects = document.querySelectorAll("[data-show]");
+  const showMoreButton = document.querySelector('#showMore') as HTMLElement;
+  const extraProjects = document.querySelectorAll('[data-show]');
 
-  showMoreButton?.addEventListener("click", () => {
+  showMoreButton?.addEventListener('click', () => {
     if (extraProjects) {
       extraProjects.forEach((project) => {
         if (project instanceof HTMLElement) {
-          project.dataset.show = "true";
-          showMoreButton.dataset.show = "false";
+          project.dataset.show = 'true';
+          showMoreButton.dataset.show = 'false';
         }
       });
     }
