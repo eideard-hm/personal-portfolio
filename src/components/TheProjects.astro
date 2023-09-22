@@ -1,9 +1,13 @@
 ---
+import { Content as ProjectsText } from '@/data/projects.md';
 import ProjectList from '@components/ProjectList.astro';
 ---
 
 <div class="projects" id="projects">
   <h2>Proyectos</h2>
+  <header class="projects__intro">
+    <ProjectsText />
+  </header>
   <ProjectList />
 </div>
 
@@ -11,6 +15,10 @@ import ProjectList from '@components/ProjectList.astro';
   .projects {
     @include card;
     position: relative;
+
+    & .projects__intro {
+      margin-bottom: 20px;
+    }
   }
 
   h2 {
