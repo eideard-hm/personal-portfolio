@@ -15,7 +15,7 @@
   "private": true,
   "scripts": {
     "astro": "astro",
-    "build": "astro build && cp _redirects dist/_redirects",
+    "build": "astro build",
     "dev": "astro dev",
     "preview": "astro preview",
     "start": "astro dev"
