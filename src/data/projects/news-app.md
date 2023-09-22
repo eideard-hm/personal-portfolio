@@ -4,7 +4,11 @@ slug: 'news-app'
 weight: 5
 tech: [Angular, Ionic, Typescript, GitHub]
 link: https://github.com/eideard-hm/news-app
-screenshots: [/images/project-news-app.png, /images/project-news-app2.png]
+screenshots:
+  [
+    /src/assets/images/projects/project-news-app.png,
+    /src/assets/images/projects/project-news-app2.png,
+  ]
 repoLink: https://github.com/eideard-hm/news-app
 ---
 
