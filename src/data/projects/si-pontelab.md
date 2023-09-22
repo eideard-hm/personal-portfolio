@@ -6,9 +6,9 @@ tech: [PHP, MySQL, JavaScript, Bootstrap, Composer, Git]
 link: https://pontelab.000webhostapp.com/pontelab/
 screenshots:
   [
-    /src/assets/images/projects/project-pontelab.png,
-    /src/assets/images/projects/project-pontelab2.png,
-    /src/assets/images/projects/project-pontelab3.png,
+    /images/project-pontelab.png,
+    /images/project-pontelab2.png,
+    /images/project-pontelab3.png,
   ]
 repoLink: https://github.com/eideard-hm/PonteLab
 ---

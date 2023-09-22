@@ -6,9 +6,9 @@ tech: [Angular, Typescript, Netlify]
 link: https://angular-app-weather.netlify.app/
 screenshots:
   [
-    /src/assets/images/projects/project-weatherapp.png,
-    /src/assets/images/projects/project-weatherapp2.png,
-    /src/assets/images/projects/project-weatherapp3.png,
+    /images/project-weatherapp.png,
+    /images/project-weatherapp2.png,
+    /images/project-weatherapp3.png,
   ]
 repoLink: https://github.com/eideard-hm/weatherApp
 ---

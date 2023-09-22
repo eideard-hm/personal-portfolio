@@ -4,7 +4,7 @@ slug: 'hero'
 weight: 7
 tech: [React, Angular, Typescript, GitHub]
 link: https://eideard-hm.github.io/heroesApp-react/
-screenshots: [/src/assets/images/projects/project-hero-react.png]
+screenshots: [/images/project-hero-react.png]
 repoLink: https://github.com/eideard-hm/heroesApp-react
 ---
 

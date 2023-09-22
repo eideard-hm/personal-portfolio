@@ -6,8 +6,8 @@ tech: [PHP, JavaScript, MySQL, Bootstrap]
 link: https://www.youtube.com/watch?v=TS53iGuQxC4&ab_channel=MelanieSolano
 screenshots:
   [
-    /src/assets/images/projects/project-si-avenida-decima.png,
-    /src/assets/images/projects/project-si-avenida-decima2.png,
+    /images/project-si-avenida-decima.png,
+    /images/project-si-avenida-decima2.png,
   ]
 repoLink: https://github.com/eideard-hm/Unidad_Residencial_Avenida_Decima
 ---

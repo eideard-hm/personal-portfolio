@@ -4,7 +4,7 @@ slug: 'monaco-editor'
 weight: 6
 tech: [React, JavaScript, Netlify]
 link: https://code-editor-web.netlify.app/
-screenshots: [/src/assets/images/projects/project-monaco-editor.png]
+screenshots: [/images/project-monaco-editor.png]
 repoLink: https://github.com/eideard-hm/monaco-editor-React
 ---
 

@@ -4,11 +4,7 @@ slug: 'giphy-app'
 weight: 8
 tech: [React, JavaScript, GitHub]
 link: https://eideard-hm.github.io/react-giphy-app/
-screenshots:
-  [
-    /src/assets/images/projects/project-giphy-app.png,
-    /src/assets/images/projects/project-giphy-app2.png,
-  ]
+screenshots: [/images/project-giphy-app.png, /images/project-giphy-app2.png]
 repoLink: https://github.com/eideard-hm/react-giphy-app
 ---
 

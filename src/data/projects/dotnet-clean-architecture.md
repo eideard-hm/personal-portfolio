@@ -6,8 +6,8 @@ tech: [.NET, C#, GraphQL, Sql Server]
 link: https://github.com/eideard-hm/dotnet-graphQL-clean-architecture
 screenshots:
   [
-    /src/assets/images/projects/project-graphql-clean-arch.png,
-    /src/assets/images/projects/project-graphql-clean-arch2.png,
+    /images/project-graphql-clean-arch.png,
+    /images/project-graphql-clean-arch2.png,
   ]
 repoLink: https://github.com/eideard-hm/dotnet-graphQL-clean-architecture
 ---
