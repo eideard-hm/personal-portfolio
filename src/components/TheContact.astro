@@ -1,6 +1,6 @@
 ---
-import { Content as ContactMeText } from "@/data/contact-me.md";
-import SocialContact from "./SocialContact.astro";
+import { Content as ContactMeText } from '@/data/contact-me.md';
+import SocialContact from './SocialContact.astro';
 ---
 
 <div class="contact" id="contact">
@@ -34,7 +34,7 @@ import SocialContact from "./SocialContact.astro";
           <textarea class="text" rows="20" name="body" aria-label="Mensagem"
           ></textarea>
         </div>
-        <button type="submit">Enviar mensaje</button>
+        <button type="submit">Enviar Mensaje</button>
       </form>
     </div>
     <div class="contact__social">
@@ -44,13 +44,13 @@ import SocialContact from "./SocialContact.astro";
 </div>
 
 <script>
-  const inputs = document.querySelectorAll("input, textarea");
+  const inputs = document.querySelectorAll('input, textarea');
 
   inputs.forEach((input) => {
     input.addEventListener(
-      "invalid",
+      'invalid',
       () => {
-        input.classList.add("error");
+        input.classList.add('error');
       },
       false,
     );
