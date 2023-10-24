@@ -2,7 +2,7 @@
 title: 'Sistema de Información PonteLab'
 slug: 'pontelab'
 weight: 1
-tech: [PHP, MySQL, JavaScript, Bootstrap, Composer, Git]
+tech: [Angular, PHP, MySQL, JavaScript, Bootstrap, Composer, Git]
 link: https://pontelab.000webhostapp.com/pontelab/
 screenshots:
   [

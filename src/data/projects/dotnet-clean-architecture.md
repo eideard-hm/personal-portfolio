@@ -2,7 +2,7 @@
 title: 'API con GraphQL, HotChocolate, .NET 6'
 slug: 'donet-clean-architecture'
 weight: 3
-tech: [.NET, C#, GraphQL, Sql Server]
+tech: [.NET, C#, GraphQL, Sql Server, Angular, Node.js]
 link: https://github.com/eideard-hm/dotnet-graphQL-clean-architecture
 screenshots:
   [

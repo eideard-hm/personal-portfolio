@@ -2,7 +2,7 @@
 title: 'Sistema de Información Conjunto Residencial Avenida Décima'
 slug: si-avenida-decima
 weight: 3
-tech: [PHP, JavaScript, MySQL, Bootstrap]
+tech: [PHP, JavaScript, MySQL, Bootstrap, Node.js]
 link: https://www.youtube.com/watch?v=TS53iGuQxC4&ab_channel=MelanieSolano
 screenshots:
   [
