@@ -3,9 +3,15 @@ title: 'Aplicación-Bot WhatsApp - WS App'
 slug: 'ws-app'
 weight: 2
 tech: [React, Typescript, Node.js, Vite]
-link: https://custom-project-ws.vercel.app/auth/login
+link: https://botwhatsapp-wsapp.netlify.app/auth/login
 screenshots: [/images/project-ws-app.png, /images/project-ws-app2.png]
 repoLink: https://github.com/eideard-hm/custom-project-ws
 ---
 
-Aplicación intregrada con WhatsApp.
+Dirigí el desarrollo de Aplicación-Bot WhatsApp - WS App, una plataforma
+pionera de mensajería masiva. Utilizando tecnologías de vanguardia como
+React, Astro y Node.js, logré una interfaz ágil y atractiva para el envío
+masivo de mensajes en WhatsApp. La integración uida con la API de
+WhatsApp, respaldada por una arquitectura e ciente en Node.js, garantiza
+un rendimiento excepcional en la gestión de comunicaciones a gran
+escala.
