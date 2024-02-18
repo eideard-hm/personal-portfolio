@@ -14,7 +14,6 @@
   "name": "portfolio",
   "private": true,
   "scripts": {
-    "install": "pnpm install --no-frozen-lockfile",
     "astro": "astro",
     "build": "astro build",
     "dev": "astro dev",
