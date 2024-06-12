@@ -26,13 +26,24 @@ const pullrequestsInfo = [
     alt: 'Pull request contribuyendo a midudev/tetris-code-interview',
     url: 'https://github.com/midudev/tetris-code-interview/pull/2',
   },
+  {
+    alt: 'Pull request contribuyendo a midudev/la-velada-web-oficial',
+    url: 'https://github.com/midudev/la-velada-web-oficial/pull/583',
+  },
+  {
+    alt: 'Pull request contribuyendo a midudev/la-velada-web-oficial',
+    url: 'https://github.com/midudev/la-velada-web-oficial/pull/581',
+  },
 ];
 ---
 
-<div class="opensource" id="opensource">
-  <div class="opensource__card">
+<div
+  class='opensource'
+  id='opensource'
+>
+  <div class='opensource__card'>
     <h2>Open Source</h2>
-    <div class="card__text">
+    <div class='card__text'>
       <p>
         He tenido la oportunidad de colaborar en proyectos de código abierto,
         donde mi contribución no solo se trata de líneas de código, sino también
@@ -49,15 +60,18 @@ const pullrequestsInfo = [
     </div>
   </div>
 
-  <div class="opensource__gallery">
+  <div class='opensource__gallery'>
     {
       pullrequests.map((print, index) => (
-        <div class="gallery__image">
-          <a href={pullrequestsInfo[index].url} target="_blank">
+        <div class='gallery__image'>
+          <a
+            href={pullrequestsInfo[index].url}
+            target='_blank'
+          >
             <img
               src={print.default.src}
               alt={pullrequestsInfo[index].alt}
-              loading="lazy"
+              loading='lazy'
             />
           </a>
         </div>
@@ -66,7 +80,7 @@ const pullrequestsInfo = [
   </div>
 </div>
 
-<style lang="scss">
+<style lang='scss'>
   h2 {
     font-size: var(--step-3);
   }
