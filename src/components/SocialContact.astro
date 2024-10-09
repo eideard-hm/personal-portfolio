@@ -1,32 +1,45 @@
 ---
+const logoWhatsApp = (await import('~icons/simple-icons/whatsapp?raw')).default;
 const logoInstagram = (await import('~icons/simple-icons/instagram?raw'))
   .default;
 const logoLinkedin = (await import('~icons/logos/linkedin-icon?raw')).default;
 const logoGitHub = (await import('~icons/simple-icons/github?raw')).default;
 ---
 
-<div class="social">
-  <ul role="list">
+<div class='social'>
+  <ul role='list'>
     <li>
       <a
-        href="https://www.linkedin.com/in/edier-heraldo-hernandez-molano-4174601aa/"
-        target="_blank"><Fragment set:html={logoLinkedin} />Linkedin</a
+        href='https://wa.me/573206371091'
+        target='_blank'
+        ><Fragment set:html={logoWhatsApp} />WhatsApp</a
       >
     </li>
     <li>
-      <a href="https://github.com/eideard-hm/" target="_blank"
+      <a
+        href='https://www.linkedin.com/in/edier-heraldo-hernandez-molano-4174601aa/'
+        target='_blank'
+        ><Fragment set:html={logoLinkedin} />Linkedin</a
+      >
+    </li>
+    <li>
+      <a
+        href='https://github.com/eideard-hm/'
+        target='_blank'
         ><Fragment set:html={logoGitHub} />GitHub</a
       >
     </li>
     <li>
-      <a href="https://www.instagram.com/eideard.hm/" target="_blank"
+      <a
+        href='https://www.instagram.com/eideard.hm/'
+        target='_blank'
         ><Fragment set:html={logoInstagram} />Instagram</a
       >
     </li>
   </ul>
 </div>
 
-<style lang="scss">
+<style lang='scss'>
   .social {
     flex: 1 1 180px;
     margin-top: 0.2rem;
