@@ -3,41 +3,64 @@ import { Content as ContactMeText } from '@/data/contact-me.md';
 import SocialContact from './SocialContact.astro';
 ---
 
-<div class="contact" id="contact">
+<div
+  class='contact'
+  id='contact'
+>
   <h2>Contacto</h2>
-  <div class="contact__text">
+  <div class='contact__text'>
     <ContactMeText />
   </div>
-  <div class="contact__grid">
-    <div class="contact__email">
+  <div class='contact__grid'>
+    <div class='contact__email'>
       <form
-        name="contact"
-        method="POST"
-        data-netlify="true"
-        netlify-honeypot="bot-field"
-        action="/success"
+        name='contact'
+        method='POST'
+        data-netlify='true'
+        netlify-honeypot='bot-field'
+        action='/success'
       >
-        <div class="contact__info">
-          <label class="honey-pot" aria-hidden="true">
+        <div class='contact__info'>
+          <label
+            class='honey-pot'
+            aria-hidden='true'
+          >
             Don't fill this out if you're human: <input
-              name="bot-field"
-              tabindex="-1"
-              class="honey-pot"
-              aria-hidden="true"
+              name='bot-field'
+              tabindex='-1'
+              class='honey-pot'
+              aria-hidden='true'
             />
           </label>
-          <label>Nombre: <input type="text" name="name" required /></label>
-          <label>Email:&nbsp;<input type="email" name="email" required /></label
+          <label
+            >Nombre: <input
+              type='text'
+              name='name'
+              required
+            />
+          </label>
+          <label
+            >Email:&nbsp;<input
+              type='email'
+              name='email'
+              required
+            />
+          </label>
+        </div>
+        <div class='contact__body'>
+          <textarea
+            class='text'
+            rows='20'
+            name='body'
+            aria-label='Mensaje'
+            placeholder='Escribe tu mensaje aquí'
           >
+          </textarea>
         </div>
-        <div class="contact__body">
-          <textarea class="text" rows="20" name="body" aria-label="Mensagem"
-          ></textarea>
-        </div>
-        <button type="submit">Enviar Mensaje</button>
+        <button type='submit'>Enviar Mensaje</button>
       </form>
     </div>
-    <div class="contact__social">
+    <div class='contact__social'>
       <SocialContact />
     </div>
   </div>
@@ -52,12 +75,12 @@ import SocialContact from './SocialContact.astro';
       () => {
         input.classList.add('error');
       },
-      false,
+      false
     );
   });
 </script>
 
-<style lang="scss">
+<style lang='scss'>
   .contact {
     @include card;
   }
