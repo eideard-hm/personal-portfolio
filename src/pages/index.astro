@@ -1,20 +1,49 @@
 ---
 import Layout from '@/layouts/Layout.astro';
-import TheAboutMe from '@components/TheAboutMe.astro';
-import TheContact from '@components/TheContact.astro';
-import TheHero from '@components/TheHero.astro';
-import TheIcons from '@components/TheIcons.astro';
-import TheOpenSource from '@components/TheOpenSource.astro';
-import TheProjects from '@components/TheProjects.astro';
-import TheSkills from '@components/TheSkills.astro';
+
+import AboutMe from '@/components/AboutMe.astro';
+import Briefcase from '@/components/icons/Briefcase.astro';
+import CodeIcon from '@/components/icons/Code.astro';
+import Experience from '@/components/Experience.astro';
+import ProfileCheck from '@/components/icons/ProfileCheck.astro';
+import Projects from '@/components/Projects.astro';
+import SectionContainer from '@/components/SectionContainer.astro';
+import Hero from '@/components/Hero.astro';
+import TitleSection from '@/components/TitleSection.astro';
 ---
 
-<Layout pageName="">
-  <TheHero />
-  <TheIcons />
-  <TheAboutMe />
-  <TheSkills />
-  <TheProjects />
-  <TheOpenSource />
-  <TheContact />
+<Layout
+  title='Edier Hernandez | Portafolio'
+  description='Contrata a Edier Hernandez para crear tu aplicación web o móvil. Desarrollador Web. Especializado en crear aplicaciones únicas.'
+>
+  <main class='px-4'>
+    <SectionContainer class='py-16 md:py-36'>
+      <Hero />
+    </SectionContainer>
+  </main>
+  <div class='space-y-24'>
+    <SectionContainer id='experiencia'>
+      <TitleSection>
+        <Briefcase class='size-8' />
+        Experiencia laboral
+      </TitleSection>
+      <Experience />
+    </SectionContainer>
+
+    <SectionContainer id='proyectos'>
+      <TitleSection>
+        <CodeIcon class='size-7' />
+        Proyectos
+      </TitleSection>
+      <Projects />
+    </SectionContainer>
+
+    <SectionContainer id='sobre-mi'>
+      <TitleSection>
+        <ProfileCheck class='size-8' />
+        Sobre mí
+      </TitleSection>
+      <AboutMe />
+    </SectionContainer>
+  </div>
 </Layout>

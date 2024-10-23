@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "jsx": "preserve",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ],
+      "@components/*": [
+        "src/components/*"
+      ]
+    },
+    "types": [
+      "unplugin-icons/types/astro",
+      "astro/client"
+    ]
+  },
+  "extends": "astro/tsconfigs/strict"
+}

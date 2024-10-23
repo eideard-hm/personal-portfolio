@@ -1,0 +1,96 @@
+---
+import GitHub from './icons/GitHub.astro';
+import NextJS from './icons/NextJS.astro';
+import Tailwind from './icons/Tailwind.astro';
+import Link from './icons/Link.astro';
+import LinkButton from './LinkButton.astro';
+
+const TAGS = {
+  NEXT: {
+    name: 'Next.js',
+    class: 'bg-black text-white',
+    icon: NextJS,
+  },
+  TAILWIND: {
+    name: 'Tailwind CSS',
+    class: 'bg-[#003159] text-white',
+    icon: Tailwind,
+  },
+};
+const PROJECTS = [
+  {
+    title: 'WS App - Aplicación-Bot WhatsApp',
+    description:
+      'Plataforma pionera de mensajería masiva. Utilizando tecnologías de vanguardia como React, Astro y Node.js, logre una interfaz ágil y atractiva para el envío masivo de mensajes en WhatsApp.',
+    link: 'https://bulk-service-ws.netlify.app',
+    github: 'https://github.com/eideard-hm/custom-project-ws',
+    image: '/projects/project-ws-app.webp',
+    tags: [TAGS.NEXT, TAGS.TAILWIND],
+  },
+  {
+    title: 'PonteLab- Sistema de Información',
+    description:
+      'Sistema de información que sirve como puente de comunicación laboral entre contratantes y aspirantes. Nace entre otras cosas de la pandemia y una de las afectaciones que creo, la que seria el desempleo, por lo que se planteo un sistema de información que permita la creación de vínculos laborales entre aspirantes y contratantes.',
+    github: 'https://github.com/eideard-hm/PonteLab',
+    image: '/projects/project-pontelab2.webp',
+    tags: [TAGS.NEXT, TAGS.TAILWIND],
+  },
+];
+---
+
+<div class='flex flex-col gap-y-16'>
+  {
+    PROJECTS.map(({ image, title, description, tags, link, github }) => (
+      <article class='flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0'>
+        <div class='w-full md:w-1/2'>
+          <div class='relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50'>
+            <img
+              alt={title}
+              class='object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105'
+              loading='lazy'
+              src={image}
+            />
+          </div>
+        </div>
+
+        <div class='w-full md:w-1/2 md:max-w-lg'>
+          <h3 class='text-2xl font-bold text-gray-800 dark:text-gray-100'>
+            {title}
+          </h3>
+          <div class='flex flex-wrap mt-2'>
+            <ul class='flex flex-row mb-2 gap-x-2'>
+              {tags.map((tag) => (
+                <li>
+                  <span
+                    class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 `}
+                  >
+                    <tag.icon class='size-4' />
+                    {tag.name}
+                  </span>
+                </li>
+              ))}
+            </ul>
+
+            <div class='mt-2 text-gray-700 dark:text-gray-400'>
+              {description}
+            </div>
+            <footer class='flex items-end justify-start mt-4 gap-x-4'>
+              {github && (
+                <LinkButton href={github}>
+                  <GitHub class='size-6' />
+                  Código
+                </LinkButton>
+              )}
+              {link && (
+                <LinkButton href={link}>
+                  <Link class='size-4' />
+                  Vista previa
+                </LinkButton>
+              )}
+            </footer>
+          </div>
+        </div>
+      </article>
+    ))
+  }
+</div>

@@ -1,14 +1,27 @@
-# Welcome to my portfolio
+# 👨🏻‍💻 Porfolio para programadores y desarrolladores
 
-[![Built with Astro](https://astro.badg.es/v1/built-with-astro.svg)](https://astro.build)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/f40f0a92-45aa-4a3b-9e50-0ff06384585c/deploy-status)](https://app.netlify.com/sites/ralacerda-portfolio/deploys)
+<div align="center">
+<a href="https://porfolio.dev/">
+<img src="./public/porfolio.webp">
+</a>
+<p></p>
+</div>
 
-Hello. This is the current repository for my portfolio.
+<div align="center">
 
-## Tools
+![Astro Badge](https://img.shields.io/badge/Astro-FF3E00?logo=astro&logoColor=fff&style=flat)
+![Tailwind CSS Badge](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=fff&style=flat)
+![GitHub stars](https://img.shields.io/github/stars/midudev/porfolio.dev)
+![GitHub PRs](https://img.shields.io/github/issues-pr/midudev/porfolio.dev)
+![GitHub forks](https://img.shields.io/github/forks/midudev/porfolio.dev)
+![GitHub issues](https://img.shields.io/github/issues/midudev/porfolio.dev)
 
-## Challenges
+</div>
 
-## What I learned
+## 🫂 Contribuidores
 
-## Final Product
+<a href="https://github.com/midudev/porfolio.dev/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=midudev/porfolio.dev" />
+</a>
+
+<p></p>

@@ -1,0 +1,57 @@
+---
+import Badge from '@/components/Badge.astro';
+import GitHub from '@/components/icons/GitHub.astro';
+import LinkedInIcon from '@/components/icons/LinkedIn.astro';
+import MailIcon from '@/components/icons/Mail.astro';
+import SocialPill from '@/components/SocialPill.astro';
+
+const personalImageAlt = 'Edier Hernandez';
+---
+
+<div class='max-w-xl'>
+  <div class='flex gap-4 mb-4'>
+    <img
+      class='rounded-full shadow-lg size-16'
+      src='/ediercut.png'
+      alt={personalImageAlt}
+    />
+    <a
+      href='https://linkedin.com/in/edier-heraldo-hernandez-molano-4174601aa'
+      target='_blank'
+      rel='noopener'
+      class='flex items-center transition md:justify-center md:hover:scale-105'
+    >
+      <Badge>Disponible para nuevas oportunidades laborales</Badge>
+    </a>
+  </div>
+  <h1
+    class='text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white'
+  >
+    Hola, soy Edier Hernandez
+  </h1>
+  <p
+    class='mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300'
+  >
+    <strong> Desarrollador Full Stack</strong>, con tres años dedicado al
+    desarrollo de aplicaciones web únicas. Me apasiona convertir ideas en
+    soluciones efectivas que marcan la diferencia.
+  </p>
+  <nav class='flex flex-wrap gap-4 mt-8'>
+    <SocialPill href='mailto:edierhernandezmo@gmail.com'>
+      <MailIcon class='size-4' />
+      Contáctame
+    </SocialPill>
+
+    <SocialPill
+      href='https://linkedin.com/in/edier-heraldo-hernandez-molano-4174601aa'
+    >
+      <LinkedInIcon class='size-4' />
+      LinkedIn
+    </SocialPill>
+
+    <SocialPill href='https://github.com/eideard-hm'>
+      <GitHub class='size-4' />
+      GitHub
+    </SocialPill>
+  </nav>
+</div>

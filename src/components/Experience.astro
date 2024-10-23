@@ -1,0 +1,27 @@
+---
+import ExperienceItem from './ExperienceItem.astro';
+const EXPERIENCE = [
+  {
+    date: 'Actualmente...',
+    title: 'Desarrollador Frontend',
+    company: 'Comercial Allan S.A.S',
+    description: `Responsable del desarrollo de interfaces web y móviles con Angular, React e Ionic, mejorando el rendimiento de las aplicaciones en un 20%. Implementación de APIs escalables con .NET y Clean Architecture, reduciendo el tiempo de desarrollo en un 15%. Integración de prácticas de pruebas automatizadas y mejora continua, garantizando la estabilidad del software. Optimización de SEO, incrementando el tráfico orgánico en un 30%, y liderazgo en la incorporación de nuevas funcionalidades para mejorar la experiencia del usuario.`,
+  },
+  {
+    date: 'Junio 2022',
+    title: 'Full Stack Engineer',
+    company: 'Digitalware',
+    description: `Responsable del desarrollo de interfaces de usuario con Angular y React, implementando diseños intuitivos y funcionales. Lideré la implementación de nuevas características y mejoras en las herramientas de desarrollo, además de corregir errores críticos para asegurar la estabilidad del sistema. Contribuí a la creación y optimización de servicios REST en .NET, Node.js y Golang, logrando un aumento del 30% en el rendimiento mediante la adopción de Clean Architecture y técnicas de asincronía.`,
+  },
+];
+---
+
+<ol class='relative mt-16'>
+  {
+    EXPERIENCE.map((experience) => (
+      <li>
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>

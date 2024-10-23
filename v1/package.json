@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "@iconify/json": "2.2.258",
+    "astro": "4.15.12",
+    "motion": "10.18.0",
+    "sass": "1.79.4",
+    "sharp": "0.33.5",
+    "unplugin-icons": "0.19.3"
+  },
+  "devDependencies": {
+    "prettier": "3.3.3",
+    "prettier-plugin-astro": "0.14.1"
+  },
+  "name": "portfolio",
+  "private": true,
+  "scripts": {
+    "astro": "astro",
+    "build": "astro build",
+    "dev": "astro dev",
+    "preview": "astro preview",
+    "start": "astro dev",
+    "upgrade": "@astrojs/upgrade",
+    "phoenix": "rm -rf ./node_modules && rm -rf pnpm-lock.yaml && pnpm install"
+  },
+  "type": "module",
+  "version": "1.4.0"
+}
