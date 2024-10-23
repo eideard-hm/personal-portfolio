@@ -1,9 +1,12 @@
 ---
 import GitHub from './icons/GitHub.astro';
-import NextJS from './icons/NextJS.astro';
-import Tailwind from './icons/Tailwind.astro';
 import Link from './icons/Link.astro';
+import NextJS from './icons/NextJS.astro';
+import NodeJsIcon from './icons/NodeJs.astro';
+import ReactIcon from './icons/React.astro';
+import Tailwind from './icons/Tailwind.astro';
 import LinkButton from './LinkButton.astro';
+import AngularIcon from './icons/Angular.astro';
 
 const TAGS = {
   NEXT: {
@@ -16,6 +19,21 @@ const TAGS = {
     class: 'bg-[#003159] text-white',
     icon: Tailwind,
   },
+  NODEJS: {
+    name: 'Node.js',
+    class: 'bg-[#8CC84B] text-white',
+    icon: NodeJsIcon,
+  },
+  REACT: {
+    name: 'React',
+    class: 'bg-[#282c34] text-white',
+    icon: ReactIcon,
+  },
+  ANGULAR: {
+    name: 'Angular',
+    class: 'bg-[#e5e5e5] text-white',
+    icon: AngularIcon,
+  },
 };
 const PROJECTS = [
   {
@@ -25,7 +43,7 @@ const PROJECTS = [
     link: 'https://bulk-service-ws.netlify.app',
     github: 'https://github.com/eideard-hm/custom-project-ws',
     image: '/projects/project-ws-app.webp',
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    tags: [TAGS.REACT, TAGS.NODEJS, TAGS.NEXT],
   },
   {
     title: 'PonteLab- Sistema de Información',
@@ -33,7 +51,7 @@ const PROJECTS = [
       'Sistema de información que sirve como puente de comunicación laboral entre contratantes y aspirantes. Nace entre otras cosas de la pandemia y una de las afectaciones que creo, la que seria el desempleo, por lo que se planteo un sistema de información que permita la creación de vínculos laborales entre aspirantes y contratantes.',
     github: 'https://github.com/eideard-hm/PonteLab',
     image: '/projects/project-pontelab2.webp',
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    tags: [TAGS.ANGULAR, TAGS.TAILWIND],
   },
 ];
 ---
