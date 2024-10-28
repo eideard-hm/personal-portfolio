@@ -4,15 +4,17 @@ import GitHub from '@/components/icons/GitHub.astro';
 import LinkedInIcon from '@/components/icons/LinkedIn.astro';
 import MailIcon from '@/components/icons/Mail.astro';
 import SocialPill from '@/components/SocialPill.astro';
+import WhatsAppIcon from '@/components/icons/WhatsApp.astro';
 
-const personalImageAlt = 'Edier Hernandez';
+const personalImageAlt =
+  'Imagen de Edier Hernandez, desarrollador de software con una trayectoria sólida en la creación y optimización de soluciones tecnológicas';
 ---
 
 <div class='max-w-xl'>
   <div class='flex gap-4 mb-4'>
     <img
       class='rounded-full shadow-lg size-16'
-      src='/ediercut.png'
+      src='/ediercut.webp'
       alt={personalImageAlt}
     />
     <a
@@ -52,6 +54,10 @@ const personalImageAlt = 'Edier Hernandez';
     <SocialPill href='https://github.com/eideard-hm'>
       <GitHub class='size-4' />
       GitHub
+    </SocialPill>
+    <SocialPill href='https://wa.me/573206371091'>
+      <WhatsAppIcon class='size-4' />
+      WhatsApp
     </SocialPill>
   </nav>
 </div>
