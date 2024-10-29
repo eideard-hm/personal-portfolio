@@ -30,9 +30,17 @@ const { description, title } = Astro.props;
       href='favicon.ico'
       type='image/x-icon'
     />
+    <link
+      rel='canonical'
+      href='https://edier-hm.netlify.app/'
+    />
     <meta
-      name='generator'
-      content={Astro.generator}
+      property='og:url'
+      content='https://edier-hm.netlify.app/'
+    />
+    <meta
+      property='og:image'
+      content='https://edier-hm.netlify.app/porfolio.jpg'
     />
     <title>{title}</title>
     <ViewTransitions />
