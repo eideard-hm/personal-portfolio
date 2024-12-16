@@ -1,12 +1,15 @@
 ---
+import AngularIcon from './icons/Angular.astro';
+import DotNetIcon from './icons/DotNet.astro';
 import GitHub from './icons/GitHub.astro';
 import Link from './icons/Link.astro';
 import NextJS from './icons/NextJS.astro';
 import NodeJsIcon from './icons/NodeJs.astro';
 import ReactIcon from './icons/React.astro';
+import SqlServerIcon from './icons/SqlServer.astro';
+import SupabaseIcon from './icons/Supabase.astro';
 import Tailwind from './icons/Tailwind.astro';
 import LinkButton from './LinkButton.astro';
-import AngularIcon from './icons/Angular.astro';
 
 const TAGS = {
   NEXT: {
@@ -31,8 +34,23 @@ const TAGS = {
   },
   ANGULAR: {
     name: 'Angular',
-    class: 'bg-[#e5e5e5] text-white',
+    class: 'bg-[#DD0031] text-white',
     icon: AngularIcon,
+  },
+  SUPABASE: {
+    name: 'Supabase',
+    class: 'bg-[#2D2E32] text-white',
+    icon: SupabaseIcon,
+  },
+  '.NET': {
+    name: '.NET',
+    class: 'bg-[#512BD4] text-white',
+    icon: DotNetIcon,
+  },
+  'SQL SERVER': {
+    name: 'SQL Server',
+    class: 'bg-[#CC2927] text-white',
+    icon: SqlServerIcon,
   },
 };
 const PROJECTS = [
@@ -42,7 +60,7 @@ const PROJECTS = [
       'Tienda online de peluches encantadores, ropa moderna, decoraciones para cumpleaños, útiles escolares y más. Productos de alta calidad y precios accesibles. Desarrollado con Next.js, Tailwind CSS y Node.js, este proyecto destaca por su diseño atractivo y su rendimiento excepcional.',
     link: 'https://alaia-max.vercel.app',
     image: '/projects/project-alaia-max.jpg',
-    tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.NODEJS, TAGS.ANGULAR],
+    tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.NODEJS, TAGS.SUPABASE],
   },
   {
     title: 'WS App - Aplicación-Bot WhatsApp',
@@ -60,6 +78,14 @@ const PROJECTS = [
     github: 'https://github.com/eideard-hm/PonteLab',
     image: '/projects/project-pontelab2.webp',
     tags: [TAGS.ANGULAR, TAGS.TAILWIND],
+  },
+  {
+    title: 'API con GraphQL, HotChocolate, .NET 6',
+    description:
+      'Api desarrollada en .NET 6, GraphQL y HotChocolate utilizando una arquitectura hexagonal, principios SOLID. Esta Api se conecta a una base de datos SQL Server, a través del ORM de Entity Framework Core para realizar diferentes transacciones. Este proyecto complementa los conocimientos adquiridos en el curso de Aprende GraphQL desde cero con .NET 8 y Hot Chocolate y Aprende ASP.NET Core MVC 6 Haciendo Proyectos Desde Cero.',
+    github: 'https://github.com/eideard-hm/dotnet-graphQL-clean-architecture',
+    image: '/projects/project-graphql-clean-arch.webp',
+    tags: [TAGS['.NET'], TAGS['SQL SERVER']],
   },
 ];
 ---
