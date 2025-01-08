@@ -36,6 +36,8 @@ export const ui = {
     'experience.3.description':
       'Colaboré en el desarrollo del sitio web de la velada IV, aportando mejoras en la interfaz de usuario y la experiencia del usuario. Implementé nuevas funcionalidades y corregí errores críticos para garantizar la estabilidad del sistema. Pull requests aceptados: 2, contribuciones: 10.',
 
+    'projects.code': 'Código',
+    'projects.preview': 'Vista previa',
     'projects.1.title': 'Tienda online - Alaia Max',
     'projects.1.description':
       'Tienda online de peluches encantadores, ropa moderna, decoraciones para cumpleaños, útiles escolares y más. Productos de alta calidad y precios accesibles. Desarrollado con Next.js, Tailwind CSS y Node.js, este proyecto destaca por su diseño atractivo y su rendimiento excepcional.',
@@ -92,6 +94,8 @@ export const ui = {
     'experience.3.description':
       'I collaborated in the development of the Velada IV website, contributing improvements in the user interface and user experience. I implemented new features and fixed critical errors to ensure system stability. Pull requests accepted: 2, contributions: 10.',
 
+    'projects.code': 'Code',
+    'projects.preview': 'Preview',
     'projects.1.title': 'E-commerce - Alaia Max',
     'projects.1.description':
       'Online store of charming plush toys, modern clothing, birthday decorations, school supplies and more. High quality products and affordable prices. Developed with Next.js, Tailwind CSS and Node.js, this project stands out for its attractive design and exceptional performance.',

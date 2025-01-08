@@ -59,6 +59,7 @@ const TAGS = {
     icon: SqlServerIcon,
   },
 };
+
 const PROJECTS = [
   {
     title: t('projects.1.title'),
@@ -130,13 +131,13 @@ const PROJECTS = [
               {github && (
                 <LinkButton href={github}>
                   <GitHub class='size-6' />
-                  Código
+                  {t('projects.code')}
                 </LinkButton>
               )}
               {link && (
                 <LinkButton href={link}>
                   <Link class='size-4' />
-                  Vista previa
+                  {t('projects.preview')}
                 </LinkButton>
               )}
             </footer>
