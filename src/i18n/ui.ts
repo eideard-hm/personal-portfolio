@@ -63,6 +63,8 @@ export const ui = {
       'Aunque mis contribuciones no fueron por medio de un contrato, disfruté mucho el aportar al Open Source. Me encanta aprender y compartir conocimientos con la comunidad.',
     'about.7':
       'Mi misión es seguir creciendo como profesional y contribuir al desarrollo de productos tecnológicos que hagan una diferencia real.',
+
+    'footer.right': 'Todos los derechos reservados - Basado en el diseño de',
   },
   en: {
     hi: 'Hi',
@@ -121,6 +123,8 @@ export const ui = {
       'Although my contributions were not through a contract, I really enjoyed contributing to Open Source. I love learning and sharing knowledge with the community.',
     'about.7':
       'My mission is to continue growing as a professional and contribute to the development of technological products that make a real difference.',
+
+    'footer.right': 'All rights reserved - Based on the design of',
   },
 } as const;
 

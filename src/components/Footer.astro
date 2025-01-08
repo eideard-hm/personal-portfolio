@@ -1,4 +1,10 @@
 ---
+import { defaultLang, type Lang } from '@/i18n/ui';
+import { useTranslations } from '@/i18n/utils';
+
+const currentLang = (Astro.currentLocale || defaultLang) as Lang;
+const t = useTranslations(currentLang);
+
 const currentYear = new Date().getFullYear();
 ---
 
@@ -15,7 +21,8 @@ const currentYear = new Date().getFullYear();
         class='hover:underline'
       >
         Edier Hernandez
-      </a>. Todos los derechos reservados - Basado en el diseño de <a
+      </a>. {t('footer.right')}
+      <a
         href='https://midu.dev/'
         class='hover:underline'
         target='_blank'
@@ -30,16 +37,18 @@ const currentYear = new Date().getFullYear();
         <a
           href='/#sobre-mi'
           class='hover:underline me-4 md:me-6'
-          >Sobre mí</a
         >
+          {t('section.title.aboutMe')}
+        </a>
       </li>
       <li>
         <a
           id='contacto'
           href='mailto:edierhernandezmo@gmail.com'
           class='hover:underline'
-          >Contacto</a
         >
+          {t('hero.cta')}
+        </a>
       </li>
     </ul>
   </div>
