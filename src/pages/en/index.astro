@@ -1,0 +1,54 @@
+---
+import AboutMe from '@/components/AboutMe.astro';
+import Experience from '@/components/Experience.astro';
+import Hero from '@/components/Hero.astro';
+import Briefcase from '@/components/icons/Briefcase.astro';
+import CodeIcon from '@/components/icons/Code.astro';
+import ProfileCheck from '@/components/icons/ProfileCheck.astro';
+import Projects from '@/components/Projects.astro';
+import SectionContainer from '@/components/SectionContainer.astro';
+import TitleSection from '@/components/TitleSection.astro';
+import Layout from '@/layouts/Layout.astro';
+
+import { defaultLang, type Lang } from '@/i18n/ui';
+import { useTranslations } from '@/i18n/utils';
+
+const currentLang = (Astro.currentLocale || defaultLang) as Lang;
+const t = useTranslations(currentLang);
+---
+
+<Layout
+  title={`Edier Hernandez | ${t('section.title')}`}
+  description=`Edier Hernandez - ${t('section.description')}`
+>
+  <main class='px-4'>
+    <SectionContainer class='py-16 md:py-36'>
+      <Hero />
+    </SectionContainer>
+  </main>
+  <div class='space-y-24'>
+    <SectionContainer id='experiencia'>
+      <TitleSection>
+        <Briefcase class='size-8' />
+        {t('section.title.experience')}
+      </TitleSection>
+      <Experience />
+    </SectionContainer>
+
+    <SectionContainer id='proyectos'>
+      <TitleSection>
+        <CodeIcon class='size-7' />
+        {t('section.title.projects')}
+      </TitleSection>
+      <Projects />
+    </SectionContainer>
+
+    <SectionContainer id='sobre-mi'>
+      <TitleSection>
+        <ProfileCheck class='size-8' />
+        {t('section.title.aboutMe')}
+      </TitleSection>
+      <AboutMe />
+    </SectionContainer>
+  </div>
+</Layout>

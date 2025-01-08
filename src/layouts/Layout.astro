@@ -1,19 +1,24 @@
 ---
-import '@fontsource-variable/inter';
+import { ClientRouter } from 'astro:transitions';
 
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
+
+import { defaultLang } from '@/i18n/ui';
+
+import '@fontsource-variable/inter';
+
+const { description, title } = Astro.props;
+const currentLang = Astro.currentLocale || defaultLang;
 
 interface Props {
   title: string;
   description: string;
 }
-
-const { description, title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang='es'>
+<html lang={currentLang}>
   <head>
     <meta charset='UTF-8' />
     <meta
@@ -26,7 +31,7 @@ const { description, title } = Astro.props;
     />
     <link
       rel='shortcut icon'
-      href='favicon.ico'
+      href='https://edier-hm.netlify.app/favicon.ico'
       type='image/x-icon'
     />
     <link
@@ -41,7 +46,19 @@ const { description, title } = Astro.props;
       property='og:image'
       content='https://edier-hm.netlify.app/porfolio.jpg'
     />
+    <link
+      rel='alternate'
+      hreflang='es'
+      href='https://edier-hm.netlify.app/es'
+    />
+    <link
+      rel='alternate'
+      hreflang='en'
+      href='https://edier-hm.netlify.app/en'
+    />
     <title>{title}</title>
+
+    <ClientRouter />
   </head>
 
   <body class='relative text-black dark:text-white'>

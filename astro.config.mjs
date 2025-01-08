@@ -7,4 +7,11 @@ import robotsTxt from 'astro-robots-txt';
 export default defineConfig({
   integrations: [tailwind(), robotsTxt()],
   site: 'https://edier-hm.netlify.app/',
+  i18n: {
+    locales: ['en', 'es'],
+    defaultLocale: 'en',
+    routing: {
+      prefixDefaultLocale: true,
+    },
+  },
 });

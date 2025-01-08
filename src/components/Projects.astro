@@ -11,6 +11,12 @@ import SupabaseIcon from './icons/Supabase.astro';
 import Tailwind from './icons/Tailwind.astro';
 import LinkButton from './LinkButton.astro';
 
+import { defaultLang, type Lang } from '@/i18n/ui';
+import { useTranslations } from '@/i18n/utils';
+
+const currentLang = (Astro.currentLocale || defaultLang) as Lang;
+const t = useTranslations(currentLang);
+
 const TAGS = {
   NEXT: {
     name: 'Next.js',
@@ -55,34 +61,30 @@ const TAGS = {
 };
 const PROJECTS = [
   {
-    title: 'E-commerce - Alaia Max',
-    description:
-      'Tienda online de peluches encantadores, ropa moderna, decoraciones para cumpleaños, útiles escolares y más. Productos de alta calidad y precios accesibles. Desarrollado con Next.js, Tailwind CSS y Node.js, este proyecto destaca por su diseño atractivo y su rendimiento excepcional.',
+    title: t('projects.1.title'),
+    description: t('projects.1.description'),
     link: 'https://alaia-max.vercel.app',
     image: '/projects/project-alaia-max.jpg',
     tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.NODEJS, TAGS.SUPABASE],
   },
   {
-    title: 'WS App - Aplicación-Bot WhatsApp',
-    description:
-      'Plataforma pionera de mensajería masiva. Utilizando tecnologías de vanguardia como React, Astro y Node.js, logre una interfaz ágil y atractiva para el envío masivo de mensajes en WhatsApp.',
+    title: t('projects.2.title'),
+    description: t('projects.2.description'),
     link: 'https://bulk-service-ws.netlify.app',
     github: 'https://github.com/eideard-hm/custom-project-ws',
     image: '/projects/project-ws-app.webp',
     tags: [TAGS.REACT, TAGS.NODEJS, TAGS.NEXT],
   },
   {
-    title: 'PonteLab - Sistema de Información',
-    description:
-      'Sistema de información que sirve como puente de comunicación laboral entre contratantes y aspirantes. Nace entre otras cosas de la pandemia y una de las afectaciones que creo, la que seria el desempleo, por lo que se planteo un sistema de información que permita la creación de vínculos laborales entre aspirantes y contratantes.',
+    title: t('projects.3.title'),
+    description: t('projects.3.description'),
     github: 'https://github.com/eideard-hm/PonteLab',
     image: '/projects/project-pontelab2.webp',
     tags: [TAGS.ANGULAR, TAGS.TAILWIND],
   },
   {
-    title: 'API con GraphQL, HotChocolate, .NET 6',
-    description:
-      'Api desarrollada en .NET 6, Entity Framework, GraphQL y HotChocolate utilizando una arquitectura hexagonal, principios SOLID. Este proyecto complementa los conocimientos adquiridos en el curso de Aprende GraphQL desde cero con .NET 8 y Hot Chocolate y Aprende ASP.NET Core MVC 6 Haciendo Proyectos Desde Cero.',
+    title: t('projects.4.title'),
+    description: t('projects.4.description'),
     github: 'https://github.com/eideard-hm/dotnet-graphQL-clean-architecture',
     image: '/projects/project-graphql-clean-arch.webp',
     tags: [TAGS['.NET'], TAGS['SQL SERVER']],

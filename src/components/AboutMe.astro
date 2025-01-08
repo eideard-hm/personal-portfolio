@@ -1,6 +1,11 @@
 ---
-const personalImageAlt =
-  'Imagen de Edier Hernandez, desarrollador de software con una trayectoria sólida en la creación y optimización de soluciones tecnológicas';
+import { defaultLang, type Lang } from '@/i18n/ui';
+import { useTranslations } from '@/i18n/utils';
+
+const currentLang = (Astro.currentLocale || defaultLang) as Lang;
+const t = useTranslations(currentLang);
+
+const personalImageAlt = t('hero.imgAlt');
 ---
 
 <article
@@ -10,28 +15,18 @@ const personalImageAlt =
     class='[&>p]:mb-4 [&>p>strong]:text-secondary dark:[&>p>strong]:text-secondary [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty order-2 md:order-1'
   >
     <p>
-      Hola, <strong>soy Edier Hernandez</strong>, un apasionado desarrollador de
-      software con una trayectoria sólida en la creación y optimización de
-      soluciones tecnológicas. Tengo experiencia en el <strong>
-        desarrollo de aplicaciones web y móviles, así como en la implementación
-        de prácticas de arquitectura limpia y optimización de APIs.
-      </strong>
+      {t('hi')}, <strong>{t('me')}</strong>, {t('about.1')}
+      <strong>{t('about.2')}</strong>
     </p>
 
     <p>
-      Algunos de mis éxitos incluyen <strong
-        >colaborar en el desarrollo del sitio web de la velada IV</strong
-      >. Aunque mis contribuciones no fueron por medio de un contrato, disfruté
-      mucho el aportar al Open Source.
+      {t('about.4')}
+      <strong>{t('about.5')}</strong>. {t('about.6')}
     </p>
 
     <p>
-      Mi enfoque es ofrecer soluciones eficientes y escalables, y disfruto
-      aplicando las mejores prácticas de desarrollo para garantizar un
-      rendimiento óptimo y una experiencia de usuario sobresaliente. <strong
-        >Mi misión es seguir creciendo como profesional y contribuir al
-        desarrollo de productos tecnológicos que hagan una diferencia real.</strong
-      >
+      {t('about.3')}
+      <strong>{t('about.7')}</strong>
     </p>
   </div>
 

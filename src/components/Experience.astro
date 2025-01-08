@@ -1,24 +1,30 @@
 ---
 import ExperienceItem from './ExperienceItem.astro';
+
+import { defaultLang, type Lang } from '@/i18n/ui';
+import { useTranslations } from '@/i18n/utils';
+
+const currentLang = (Astro.currentLocale || defaultLang) as Lang;
+const t = useTranslations(currentLang);
+
 const EXPERIENCE = [
   {
-    date: 'Actualmente...',
-    title: 'Desarrollador Frontend',
+    date: t('experience.1.date'),
+    title: t('experience.1.title'),
     company: 'Comercial Allan S.A.S',
-    description: `Responsable del desarrollo de interfaces web y móviles con Angular, React e Ionic, mejorando el rendimiento de las aplicaciones en un 20%. Implementación de APIs escalables con .NET y Clean Architecture, reduciendo el tiempo de desarrollo en un 15%. Integración de prácticas de pruebas automatizadas y mejora continua, garantizando la estabilidad del software.`,
+    description: t('experience.1.description'),
   },
   {
-    date: 'Junio 2022',
-    title: 'Full Stack Engineer',
+    date: t('experience.2.date'),
+    title: t('experience.2.title'),
     company: 'Digitalware',
-    description: `Responsable del desarrollo de interfaces de usuario, implementando diseños intuitivos y funcionales. Brindar soporte mediante la corrección de errores críticos para asegurar la estabilidad del sistema. Contribuí a la creación y optimización de servicios REST en .NET, Node.js y Golang, logrando un aumento del 30% en el rendimiento mediante la adopción de Clean Architecture y técnicas de asincronía.`,
+    description: t('experience.2.description'),
   },
   {
     date: '',
-    title: 'Contribución al Proyecto de la Velada IV en Github',
+    title: t('experience.3.title'),
     company: 'Open Source',
-    description:
-      'Colaboré en el desarrollo del sitio web de la velada IV, aportando mejoras en la interfaz de usuario y la experiencia del usuario. Implementé nuevas funcionalidades y corregí errores críticos para garantizar la estabilidad del sistema. Pull requests aceptados: 2, contribuciones: 10.',
+    description: t('experience.3.description'),
   },
 ];
 ---

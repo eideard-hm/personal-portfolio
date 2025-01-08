@@ -1,24 +1,31 @@
 ---
 import ThemeToggle from './ThemeToggle.astro';
+import ToggleLang from './ToggleLang.astro';
+
+import { defaultLang, type Lang } from '@/i18n/ui';
+import { useTranslations } from '@/i18n/utils';
+
+const currentLang = (Astro.currentLocale || defaultLang) as Lang;
+const t = useTranslations(currentLang);
 
 const navItems = [
   {
-    title: 'Experiencia',
+    title: t('section.title.experience'),
     label: 'experiencia',
     url: '/#experiencia',
   },
   {
-    title: 'Proyectos',
+    title: t('section.title.projects'),
     label: 'proyectos',
     url: '/#proyectos',
   },
   {
-    title: 'Sobre mí',
+    title: t('section.title.aboutMe'),
     label: 'sobre-mi',
     url: '/#sobre-mi',
   },
   {
-    title: 'Contacto',
+    title: t('hero.cta'),
     label: 'contacto',
     url: 'mailto:edierhernandezmo@gmail.com',
   },
@@ -34,7 +41,7 @@ const navItems = [
     {
       navItems.map((link) => (
         <a
-          class='relative block px-2 py-2 transition hover:text-blue-500 dark:hover:text-blue-500'
+          class='relative block px-2 py-2 transition hover:text-primary dark:hover:text-primary'
           aria-label={link.label}
           href={link.url}
         >
@@ -43,6 +50,7 @@ const navItems = [
       ))
     }
     <ThemeToggle />
+    <ToggleLang />
   </nav>
 </header>
 
