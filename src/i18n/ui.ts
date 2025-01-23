@@ -12,9 +12,10 @@ export const ui = {
 
     'hero.badge': 'Disponible para nuevas oportunidades laborales',
     'hero.greeting': 'Hola, soy Edier Hernandez',
-    'hero.role': 'Desarrollador Full Stack',
+    'hero.role':
+      'Desarrollador Full Stack apasionado por crear soluciones innovadoras.',
     'hero.description':
-      'con +3 años dedicado al desarrollo de aplicaciones web únicas. Me apasiona convertir ideas en soluciones efectivas que marcan la diferencia.',
+      'Experiencia en el desarrollo de aplicaciones web y móviles únicas y escalables. Transformo ideas en soluciones efectivas que marcan la diferencia.',
     'hero.cta': 'Contáctame',
     'hero.imgAlt':
       'Imagen de Edier Hernandez, desarrollador de software con una trayectoria sólida en la creación y optimización de soluciones tecnológicas',
@@ -72,9 +73,10 @@ export const ui = {
 
     'hero.badge': 'Available for new job opportunities',
     'hero.greeting': 'Hi, I am Edier Hernandez',
-    'hero.role': 'Full Stack Developer',
+    'hero.role':
+      'Full Stack Developer passionate about creating innovative solutions.',
     'hero.description':
-      'with +3 years dedicated to the development of unique web applications. I am passionate about turning ideas into effective solutions that make a difference.',
+      'Experience in developing unique and scalable web and mobile applications. I transform ideas into effective solutions that make a difference.',
     'hero.cta': 'Contact me',
     'hero.imgAlt':
       'Image of Edier Hernandez, software developer with a solid track record in creating and optimizing technological solutions',
