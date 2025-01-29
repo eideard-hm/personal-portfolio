@@ -31,7 +31,7 @@ export const ui = {
     'experience.1.title': 'Desarrollador Frontend',
     'experience.1.description': `Responsable del desarrollo y soporte de plataforma de comercio electrónico y gestión de clientes para web y móvil con soporte sin conexión, mejorando la experiencia del usuario. Optimicé el rendimiento, reduciendo los tiempos de carga en un 30%, y aceleré la entrega de productos en un 25% mediante herramientas unificadas.`,
     'experience.2.date': 'Junio 2022',
-    'experience.2.title': 'Ingeniero de Full Stack',
+    'experience.2.title': 'Ingeniero Full Stack',
     'experience.2.description': `Implementé una solución en el sector salud, optimizando procesos de facturación y caja, reduciendo tiempos de inactividad en un 25%. Resolví errores críticos, actualicé herramientas para aumentar la productividad del equipo en un 15% y aseguré una plataforma confiable mediante soporte técnico continuo.`,
     'experience.3.title': 'Contribución al Proyecto de la Velada IV en Github',
     'experience.3.description':
