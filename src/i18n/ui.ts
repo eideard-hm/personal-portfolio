@@ -26,13 +26,20 @@ export const ui = {
     'section.title.experience': 'Experiencia laboral',
     'section.title.projects': 'Proyectos',
     'section.title.aboutMe': 'Sobre mí',
+    
+    'experience.current.date': 'Actualmente...',
+    'experience.current.title': 'Ingeniero de Software',
+    'experience.current.description':
+      'Desarrollador de software con experiencia en la creación y optimización de soluciones tecnológicas. Experiencia en el desarrollo de aplicaciones web y móviles, así como en la implementación de prácticas de arquitectura limpia y optimización de APIs. Me destaco por mi capacidad para trabajar en equipo, mi compromiso con la calidad y mi habilidad para resolver problemas de manera eficiente.',
 
-    'experience.1.date': 'Actualmente...',
+    'experience.1.date': 'Nov 2023 - Mar 2025',
     'experience.1.title': 'Desarrollador Frontend',
     'experience.1.description': `Responsable del desarrollo y soporte de plataforma de comercio electrónico y gestión de clientes para web y móvil con soporte sin conexión, mejorando la experiencia del usuario. Optimicé el rendimiento, reduciendo los tiempos de carga en un 30%, y aceleré la entrega de productos en un 25% mediante herramientas unificadas.`,
-    'experience.2.date': 'Junio 2022',
+
+    'experience.2.date': 'Jun 2022 - Sep 2023',
     'experience.2.title': 'Ingeniero Full Stack',
     'experience.2.description': `Implementé una solución en el sector salud, optimizando procesos de facturación y caja, reduciendo tiempos de inactividad en un 25%. Resolví errores críticos, actualicé herramientas para aumentar la productividad del equipo en un 15% y aseguré una plataforma confiable mediante soporte técnico continuo.`,
+
     'experience.3.title': 'Contribución al Proyecto de la Velada IV en Github',
     'experience.3.description':
       'Colaboré en el desarrollo del sitio web de la velada IV, aportando mejoras en la interfaz de usuario y la experiencia del usuario. Implementé nuevas funcionalidades y corregí errores críticos para garantizar la estabilidad del sistema. Pull requests aceptados: 2, contribuciones: 10.',
@@ -88,12 +95,19 @@ export const ui = {
     'section.title.projects': 'Projects',
     'section.title.aboutMe': 'About me',
 
-    'experience.1.date': 'Currently...',
+    'experience.current.date': 'Currently...',
+    'experience.current.title': 'Software Engineer',
+    'experience.current.description':
+      'Software developer with experience in creating and optimizing technological solutions. Experience in developing web and mobile applications, as well as implementing clean architecture practices and optimizing APIs. I stand out for my ability to work in a team, my commitment to quality and my ability to solve problems efficiently.',
+
+    'experience.1.date': 'Nov 2023 - Mar 2025',
     'experience.1.title': 'Frontend Developer',
     'experience.1.description': `Responsible for the development of web and mobile e-commerce platform with offline support, boosting user experience. Optimized performance, cutting load times by 30%, and accelerated delivery by 25% with unified tools.`,
-    'experience.2.date': 'June 2022',
+
+    'experience.2.date': 'Jun 2022 - Sep 2023',
     'experience.2.title': 'Full Stack Engineer',
     'experience.2.description': `Implemented a healthcare solution optimizing billing and cash processes, reducing downtime by 25%. Resolved critical errors, updated tools to boost team productivity by 15%, and ensured a reliable platform through continuous technical support.`,
+
     'experience.3.title': 'Contribution to the Velada IV Project on Github',
     'experience.3.description':
       'I collaborated in the development of the Velada IV website, contributing improvements in the user interface and user experience. I implemented new features and fixed critical errors to ensure system stability. Pull requests accepted: 2, contributions: 10.',
