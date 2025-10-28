@@ -26,7 +26,7 @@ export const ui = {
     'section.title.experience': 'Experiencia laboral',
     'section.title.projects': 'Proyectos',
     'section.title.aboutMe': 'Sobre mí',
-    
+
     'experience.current.date': 'Actualmente...',
     'experience.current.title': 'Ingeniero de Software',
     'experience.current.description':
@@ -49,9 +49,9 @@ export const ui = {
     'projects.1.title': 'Tienda online - Alaia Max',
     'projects.1.description':
       'Tienda online de peluches encantadores, ropa moderna, decoraciones para cumpleaños, útiles escolares y más. Productos de alta calidad y precios accesibles. Desarrollado con Next.js, Tailwind CSS y Node.js, este proyecto destaca por su diseño atractivo y su rendimiento excepcional.',
-    'projects.2.title': 'WS App - Aplicación-Bot WhatsApp',
+    'projects.2.title': 'VoxNet – Comunicación directa y efectiva por WhatsApp',
     'projects.2.description':
-      'Plataforma pionera de mensajería masiva. Utilizando tecnologías de vanguardia como React, Astro y Node.js, logre una interfaz ágil y atractiva para el envío masivo de mensajes en WhatsApp. Esta aplicación es ideal para campañas de marketing y comunicación efectiva con los clientes.',
+      'Es una plataforma que transforma la comunicación mediante el envío masivo y personalizado de mensajes por WhatsApp, diseñada para todos aquellos procesos que buscan optimizar su alcance, segmentar a sus públicos y mantener un contacto efectivo y real.',
     'projects.3.title': 'PonteLab - Sistema de Información',
     'projects.3.description':
       'Sistema de información que sirve como puente de comunicación laboral entre contratantes y aspirantes. Nace entre otras cosas de la pandemia y una de las afectaciones que creo, la que seria el desempleo, por lo que se planteo un sistema de información que permita la creación de vínculos laborales entre aspirantes y contratantes.',
@@ -117,9 +117,10 @@ export const ui = {
     'projects.1.title': 'E-commerce - Alaia Max',
     'projects.1.description':
       'Online store of charming plush toys, modern clothing, birthday decorations, school supplies and more. High quality products and affordable prices. Developed with Next.js, Tailwind CSS and Node.js, this project stands out for its attractive design and exceptional performance.',
-    'projects.2.title': 'WS App - WhatsApp Bot Application',
+    'projects.2.title':
+      'VoxNet – Direct and effective communication via WhatsApp',
     'projects.2.description':
-      'Pioneering mass messaging platform. Using cutting-edge technologies like React, Astro and Node.js, I achieve an agile and attractive interface for mass messaging on WhatsApp. This application is ideal for marketing campaigns and effective communication with customers.',
+      'It is a platform that transforms communication through the mass and personalized sending of messages via WhatsApp, designed for all those processes that seek to optimize their reach, segment their audiences and maintain effective and real contact.',
     'projects.3.title': 'PonteLab - Information System',
     'projects.3.description':
       'Information system that serves as a bridge of work communication between contractors and applicants. It arises among other things from the pandemic and one of the affects that I created, which would be unemployment, so an information system was proposed that allows the creation of work links between applicants and contractors.',
