@@ -46,18 +46,22 @@ export const ui = {
 
     'projects.code': 'Código',
     'projects.preview': 'Vista previa',
-    'projects.1.title': 'Tienda online - Alaia Max',
+
+    'projects.1.title': 'VoxNet – Comunicación directa y efectiva por WhatsApp',
     'projects.1.description':
-      'Tienda online de peluches encantadores, ropa moderna, decoraciones para cumpleaños, útiles escolares y más. Productos de alta calidad y precios accesibles. Desarrollado con Next.js, Tailwind CSS y Node.js, este proyecto destaca por su diseño atractivo y su rendimiento excepcional.',
-    'projects.2.title': 'VoxNet – Comunicación directa y efectiva por WhatsApp',
-    'projects.2.description':
       'Es una plataforma que transforma la comunicación mediante el envío masivo y personalizado de mensajes por WhatsApp, diseñada para todos aquellos procesos que buscan optimizar su alcance, segmentar a sus públicos y mantener un contacto efectivo y real.',
-    'projects.3.title': 'PonteLab - Sistema de Información',
+
+    'projects.2.title': 'Landing Page - Masaje Terapéutico a Domicilio ZeinMotion™',
+    'projects.2.description':
+      'Landing page para un servicio de masaje terapéutico a domicilio en Abu Dhabi, diseñada para atraer y convertir clientes potenciales a través de una interfaz atractiva y fácil de usar. Desarrollado con Next.js, Tailwind CSS, React, Nodejs y Suapabase.',
+
+    'projects.3.title': 'Tienda online - Alaia Max',
     'projects.3.description':
-      'Sistema de información que sirve como puente de comunicación laboral entre contratantes y aspirantes. Nace entre otras cosas de la pandemia y una de las afectaciones que creo, la que seria el desempleo, por lo que se planteo un sistema de información que permita la creación de vínculos laborales entre aspirantes y contratantes.',
-    'projects.4.title': 'API con GraphQL, HotChocolate, .NET 6 y C#',
+      'Tienda online de peluches encantadores, ropa moderna, decoraciones para cumpleaños, útiles escolares y más. Productos de alta calidad y precios accesibles. Desarrollado con Next.js, Tailwind CSS y Node.js, este proyecto destaca por su diseño atractivo y su rendimiento excepcional.',
+
+    'projects.4.title': 'PonteLab - Sistema de Información',
     'projects.4.description':
-      'Api desarrollada en .NET 6, Entity Framework, GraphQL y HotChocolate utilizando una arquitectura hexagonal, principios SOLID. Este proyecto complementa los conocimientos adquiridos en el curso de Aprende GraphQL desde cero con .NET 8 y Hot Chocolate y Aprende ASP.NET Core MVC 6 Haciendo Proyectos Desde Cero.',
+      'Sistema de información que sirve como puente de comunicación laboral entre contratantes y aspirantes. Nace entre otras cosas de la pandemia y una de las afectaciones que creo, la que seria el desempleo, por lo que se planteo un sistema de información que permita la creación de vínculos laborales entre aspirantes y contratantes.',
 
     'about.1':
       'un apasionado desarrollador de software con una trayectoria sólida en la creación y optimización de soluciones tecnológicas. Tengo experiencia en el',
@@ -114,19 +118,23 @@ export const ui = {
 
     'projects.code': 'Code',
     'projects.preview': 'Preview',
-    'projects.1.title': 'E-commerce - Alaia Max',
-    'projects.1.description':
-      'Online store of charming plush toys, modern clothing, birthday decorations, school supplies and more. High quality products and affordable prices. Developed with Next.js, Tailwind CSS and Node.js, this project stands out for its attractive design and exceptional performance.',
-    'projects.2.title':
+
+    'projects.1.title':
       'VoxNet – Direct and effective communication via WhatsApp',
-    'projects.2.description':
+    'projects.1.description':
       'It is a platform that transforms communication through the mass and personalized sending of messages via WhatsApp, designed for all those processes that seek to optimize their reach, segment their audiences and maintain effective and real contact.',
-    'projects.3.title': 'PonteLab - Information System',
+
+    'projects.2.title': 'Landing Page - ZeinMotion™ Therapeutic Home Massage',
+    'projects.2.description':
+      'Landing page for a therapeutic home massage service in Abu Dhabi, designed to attract and convert potential clients through an appealing and user-friendly interface. Developed with Next.js, Tailwind CSS, React, Nodejs and Suapabase.',
+
+    'projects.3.title': 'E-commerce - Alaia Max',
     'projects.3.description':
-      'Information system that serves as a bridge of work communication between contractors and applicants. It arises among other things from the pandemic and one of the affects that I created, which would be unemployment, so an information system was proposed that allows the creation of work links between applicants and contractors.',
-    'projects.4.title': 'API with GraphQL, HotChocolate, .NET 6 and C#',
+      'Online store of charming plush toys, modern clothing, birthday decorations, school supplies and more. High quality products and affordable prices. Developed with Next.js, Tailwind CSS and Node.js, this project stands out for its attractive design and exceptional performance.',
+
+    'projects.4.title': 'PonteLab - Information System',
     'projects.4.description':
-      'Api developed in .NET 6, Entity Framework, GraphQL and HotChocolate using a hexagonal architecture, SOLID principles. This project complements the knowledge acquired in the course Learn GraphQL from scratch with .NET 8 and Hot Chocolate and Learn ASP.NET Core MVC 6 Making Projects From Scratch.',
+      'Information system that serves as a bridge of work communication between contractors and applicants. It arises among other things from the pandemic and one of the affects that I created, which would be unemployment, so an information system was proposed that allows the creation of work links between applicants and contractors.',
 
     'about.1':
       'a passionate software developer with a solid track record in creating and optimizing technological solutions. I have experience in',
